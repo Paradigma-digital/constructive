@@ -1,0 +1,18 @@
+.clients {
+    min-height: 466px;
+    background: #EDF0F5;
+    padding: 74px 0;
+    &__title {
+        color: #2A3C5F;
+    }
+    &__items {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 37px;
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+        justify-items: center;
+        align-items: center;
+        gap: 28px 10px;
+    }
+}

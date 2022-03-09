@@ -1,0 +1,37 @@
+.center {
+    height: 554px;
+    padding: 63px 0;
+    background:#EDF0F5 url('../img/center/center.png') top right/ 70% 554px no-repeat;
+    &__wrapper {
+        width: 764px;
+        height: 427px;
+        background: linear-gradient(270.46deg, rgba(237, 240, 245, 0) 70.38%, rgba(237, 240, 245, 1) 100%);
+        box-shadow: inset 5px 5px 10px rgba(42, 60, 95, 0.05);
+        filter: drop-shadow(20px 30px 100px rgba(0, 0, 0, 0.05));
+        backdrop-filter: blur(8px);
+        padding-top: 60px;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 45px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #2A3C5F;
+    }
+    &__subtitle {
+        margin-top: 25px;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 20px;
+        letter-spacing: 0.03em;
+        color: #2A3C5F;
+    }
+    &__btn {
+        width: 365px;
+        margin-top: 35px;
+        &-mob {
+            display: none;
+        }
+    }
+}

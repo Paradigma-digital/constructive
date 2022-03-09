@@ -1,0 +1,279 @@
+.contacts {
+    padding: 73px 0 80px;
+    &__wrapper {
+        margin-top: 41px;
+        display: flex;
+        justify-content: space-between; 
+    }
+    &__left {
+        width: 324px;
+    }
+    &__items {
+        border-left: 2px solid rgba(134, 138, 148, 0.7);
+        padding-left: 15px;
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 21px;
+        }
+        &_title {
+            margin-bottom: 10px;
+            padding-left: 26px;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 23px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #EDF0F5;
+            &.tel {
+                background: url('../img/icons/header/tel.svg') 0 2px/ 17px 17px no-repeat;
+            }
+            &.mail {
+                background: url('../img/icons/header/mail.svg') 0 2px/ 17px 17px no-repeat;
+            }
+            &.net {
+                background: url('../img/icons/header/net.svg') 0 2px/ 17px 17px no-repeat;
+            }
+        }
+        &_link {
+            margin-left: 26px;
+            font-weight: normal;
+            font-size: 17px;
+            line-height: 20px;
+            letter-spacing: 0.03em;
+            color: #EDF0F5;
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+            & > a {
+                color: #EDF0F5;
+            }
+            & > span {
+                margin-left: 10px;
+                font-weight: 300;
+                font-size: 15px;
+                line-height: 23px;
+                letter-spacing: 0.03em;
+                color: #EDF0F5;
+            }
+        }
+    }
+    &__forms {
+        margin-top: 35px;
+        background: #EDF0F5;
+        &_wrapper {
+            position: relative;
+        }
+        &_btns {
+            display: flex;
+        }
+        &_btn {
+            width: 50%;
+            height: 54px;
+            background: rgba(42, 60, 95, 0.1);
+            font-weight: bold;
+            font-size: 17px;
+            line-height: 35px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: rgba(42, 60, 95, 0.4);
+            transition: color 0.4s ease-in-out;
+            &-active {
+                background: #EDF0F5;
+                color: #2A3C5F;
+            }
+            &:hover {
+                color: #2A3C5F;
+            }
+        }
+    }
+    &__form {
+        padding: 20px 30px 30px;
+        width: 324px;
+        transition: opacity 0.4s ease-in-out;
+        & .just-validate-error-label {
+            margin-top: 20px;
+            width: 264px;
+            padding: 15px 13px;
+            border: 1px solid #EB5757;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 23px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: #EB5757 !important;
+            &:not(:last-child) {
+                display: none;
+            }
+        }
+        & > input {
+            width: 100%;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 23px;
+            letter-spacing: 0.03em;
+            background: transparent;
+            border-bottom: 1px solid  rgba(42, 60, 95, 0.75);
+            margin-bottom: 14px;
+            &::placeholder {
+                color: rgba(42, 60, 95, 0.3);
+            }
+            &.just-validate-error-field {
+                &::placeholder {
+                    color: #FF8484;
+                }
+            }
+        }
+        & > textarea {
+            width: 100%;
+            height: 105px;
+            resize: none;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 23px;
+            letter-spacing: 0.03em;
+            background: transparent;
+            border-bottom: 1px solid  rgba(42, 60, 95, 0.75);
+            &::placeholder {
+                color: rgba(42, 60, 95, 0.3);
+            }
+            &.just-validate-error-field {
+                &::placeholder {
+                    color: #FF8484;
+                }
+            }
+        }
+        &_btn {
+            width: 100%;
+            margin-top: 26px;
+        }
+        &_politic {
+            margin: 0 auto;
+            margin-top: 20px;
+            width: 194px;
+            font-weight: normal;
+            font-size: 9px;
+            line-height: 10px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: #2A3C5F;
+            & > a {
+                color: #02acd1;
+                text-decoration: underline;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    &__right {
+        width: 730px;
+    }
+    &__address {
+        &_title {
+            padding-left: 30px;
+            background: url('../img/icons/header/map.svg') 0 2px / 15px 20px no-repeat;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 23px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #EDF0F5;
+            padding-bottom: 11px;
+            border-bottom: 2px solid rgba(134, 138, 148, 0.7);
+        }
+        &_wrapper {
+            display: flex;
+            margin-top: 23px;
+            justify-content: space-between;
+        }
+        &_item {
+            width: 350px;
+            &_title {
+                font-weight: bold;
+                font-size: 17px;
+                line-height: 35px;
+                letter-spacing: 0.03em;
+                color: #EDF0F5;
+            }
+            &_descr {
+                margin-top: -3px;
+                font-weight: normal;
+                font-size: 17px;
+                line-height: 20px;
+                letter-spacing: 0.03em;
+                color: #EDF0F5;
+            }
+        }
+    }
+    &__map {
+        margin-top: 42px;
+        width: 100%;
+        height: 501px;
+        // border: 1px solid rgba(134, 138, 148, 0.7);
+        position: relative;
+        &_img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('../img/contacts/map.png') center center/contain no-repeat;
+            z-index: 0;
+        }
+        &_dot {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 17px;
+            height: 23px;
+            background: url('../img/icons/contacts/dor-map.svg') center center/ 17px 23px no-repeat;
+            cursor: pointer;
+            &_text {
+                opacity: 0;
+                visibility: hidden;
+                padding: 8px;
+                transition: all 0.4s ease-in-out;
+                background: #C4C4C4;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 17px;
+                letter-spacing: 0.03em;
+                color: #2A3C5F;
+                position: absolute;
+                top: -58px;
+                left: -109px;
+                & > span {
+                    display: inline;
+                    font-weight: bold; 
+                }
+            }
+            &.dot-1 {
+                // top: 232px;
+                // left: 242px;
+                & > .contacts__map_dot_text {
+                    width: 235px;
+                    height: 48px;
+                }
+                
+            }
+            &.dot-2 {
+                // top: 191px;
+                // left: 473px;
+                & > .contacts__map_dot_text {
+                    width: 304px;
+                    height: 48px;
+                    left: -144px;
+                }
+            }
+            &:hover {
+                & > .contacts__map_dot_text  {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+        
+    }
+}

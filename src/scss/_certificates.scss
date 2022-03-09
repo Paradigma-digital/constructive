@@ -1,0 +1,87 @@
+.certificates {
+    padding: 74px 0 72px;
+    &__items {
+        margin-top: 44px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 255px;
+        &_link {
+            display: block;
+            width: 100%;
+            height: 357px;
+            // overflow: hidden;
+            &>*,&>*>* {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                transition: transform 0.5s ease-in;
+            }
+            &:hover {
+                &>*,&>*>* {
+                    transform: scale(1.1);
+                }
+            }
+        }
+        &_title {
+            margin-top: 35px;
+            padding-top: 15px;
+            border-top: 2px solid rgba(134, 138, 148, 0.7);
+            font-size: 15px;
+            line-height: 20px;
+            letter-spacing: 0.03em;
+            color: #EDF0F5;
+            min-height: 68px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    }
+
+    &__modal {
+        &_wrapper {
+        //    padding-top: 20%;
+        margin: auto;
+        }
+        &_slider {
+            &_wrapper{
+                position: relative;
+                width: 600px;
+                height: 640px;
+                margin: 0 auto;
+                & .reviews-btn  {
+                    position: absolute;
+                    top: calc(50% - 10px);
+                    background: transparent;
+                    transition: all 0.4s ease-in-out;
+                    z-index: 101;
+                    &:hover {
+                        & svg path{
+                            fill: #EDF0F5;
+                        }
+                    }
+                    &.reviews-prev {
+                        left: 0;
+                    }
+                    &.reviews-next {
+                        right:  0;
+                    }
+                }
+            }
+            position: relative;
+            width: 458px;
+            height: 640px;
+            margin: 0 auto;
+            
+        }
+        &_slide {
+            width: 458px;
+            height: 640px;
+            &>*,&>*>* {
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}

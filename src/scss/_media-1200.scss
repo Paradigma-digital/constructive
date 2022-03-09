@@ -1,0 +1,145 @@
+@media (max-width: 1200px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .btn {
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 45px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        width: 180px;
+        height: 45px;
+    }
+    .header {
+        &__logo {
+            margin-top: 14px;
+            margin-left: -4px;
+            width: 169px;
+            height: 60px;
+            margin-right: 22px;
+        }
+        &__nav {
+            &_item {
+                margin-right: 15px;
+            }
+        }
+        &__top {
+            &_item {
+                margin-right: 17px;
+            }
+        }
+    }
+    .footer {
+        &__right {
+            margin-left: 20px;
+        }
+        &__links {
+            margin-left: 40px;
+        }
+    }
+
+    .promo {
+        &__img {
+            height: 840px;
+        }
+        &__info {
+            padding-top: 40px;
+            width: 750px;
+        }
+        &__title {
+            font-size: 30px;
+        }
+        &__btn {
+            width: 260px;
+        }
+    }
+
+
+
+
+    .panels {
+        &__scheme {
+            margin-left: 100px;
+            &_list {
+                right: unset;
+                left: 816px;
+            }
+        }
+    }
+    .pluses {
+        &__item {
+            width: 24%;
+        }
+    }
+    .photos {
+        &__slider {
+            &_wrapper {
+                width: 700px;
+                height: 510px;
+            }
+        }
+    }
+    .use {
+        height: 400px;
+        &__item {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+            &_title {
+                font-weight: 800;
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+    }
+    .decor {
+        &__plains {
+            &_item {
+                transform: scale(0.96);
+                &.info {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+        &__textural {
+            &_slider {
+                &_wrapper {
+                    width: 770px;
+                }
+            }
+        }
+    }
+    .clients {
+        &__items {
+            width: 100%;
+        }
+    }
+    .about {
+        background:  #EDF0F5 url('../img/about/about.png') center center/ auto 230px no-repeat;
+    }
+    .certificates {
+        &__item {
+            width: 236px;
+            &_link {
+                height: 323px;
+            }
+        }
+    }
+    .reviews {
+        &__slider {
+            &_wrapper {
+                width: 760px;
+                height: 503px;
+            }
+        }
+    }
+    .contacts {
+        &__right {
+            width: 550px;
+        }
+    }
+}

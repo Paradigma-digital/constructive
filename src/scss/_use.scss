@@ -1,0 +1,42 @@
+.use {
+    padding-top: 74px;
+    height: 454px;
+    background: url('../img/use/use.png') top center/ auto 454px;
+    &__items {
+        margin-top: 44px;
+        display: flex;
+        // justify-content: space-between;
+        justify-content: flex-start;
+        &_column {
+            &:not(:last-child) {
+                margin-right: 61px;
+            }
+            &:last-child {
+                margin-left: 15px;
+            }
+        }
+    }
+
+    &__item {
+        display: flex;
+        justify-content: flex-start;
+        &_icon {
+            height: 44px;
+            width: 51px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        &_title {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 23px;     
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #EDF0F5;
+        }
+        &:not(:last-child) {
+            margin-bottom: 39px;
+        }
+    }
+}

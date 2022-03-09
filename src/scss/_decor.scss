@@ -1,0 +1,349 @@
+.decor{
+    padding: 74px 0 80px;
+    & .plains_mob-btn {
+        display: none;
+        & svg path{
+            transition: all 0.4s ease-in-out;
+        }
+        &:active {
+            & svg path{
+                fill: #EDF0F5;
+            }
+        }
+    }
+    &__plains {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 42px;
+        
+        &_item {
+            width: 160px;
+            height: 144px;
+            position: relative;
+            cursor: pointer;
+            transition: font-size 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            &_check {
+                position: absolute;
+                top: 7px;
+                right: 7px;
+                z-index: 2;
+            }
+            &_img {
+                position: absolute;
+                z-index: 0;
+            }
+            &_title {
+                margin-bottom: 15px;
+                position: relative;
+                z-index: 1;
+                text-align: center;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 15px;
+                line-height: 19px;
+                color: #2A3C5F;
+                transition: font-size 0.5s ease-in;
+            }
+            &:hover {
+                & .decor__plains_item_title {
+                    font-size: 18px;
+                }
+            }
+            &-info {
+                width: 160px;
+                height: 144px;
+                position: relative;
+                border: 1px solid #02ACD1;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                & .info_title {
+                    margin-top: 33px;
+                    text-align: center;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 23px;
+                    letter-spacing: 0.03em;
+                    text-transform: uppercase;
+                    color: #EDF0F5;
+                }
+                & .info_descr {
+                    margin-top: 10px;
+                    font-weight: normal;
+                    font-size: 17px;
+                    line-height: 20px;
+                    text-align: center;
+                    letter-spacing: 0.03em;
+                    color: #EDF0F5;
+                }
+                &-mob {
+                    display: none;
+                }
+            }
+        }
+        &_modal {
+            // &_wrapper {
+            //     padding-top: 20%;
+
+            // }
+            &_slider {
+                width: 546px;
+                margin: 0 auto;
+                position: relative;
+                & > .modal__close {
+                    top: 11px;
+                    right: 11px;
+                }
+                &_wrapper{
+                    width: 665px;
+                    margin: 0 auto;
+                    position: relative;
+                    & .decor__plains-btn  {
+                        position: absolute;
+                        top: calc(50% - 10px);
+                        background: transparent;
+                        transition: font-size 0.5s ease-in;
+                        z-index: 101;
+                        &:hover {
+                            & svg path{
+                                fill: #EDF0F5;
+                            }
+                        }
+                        &.decor__plains-prev {
+                            left: 0;
+                        }
+                        &.decor__plains-next {
+                            right:  0;
+                        }
+                    }
+                }
+            }
+            &_item {
+                position: relative;
+                width: 546px;
+                height: 546px;
+                &_img {
+                    width: 546px;
+                    height: 546px;
+                    &>*,&>*>* {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                &_check {
+                    top: 30px;
+                    right: 30px;
+                    & > svg {
+                        width: 44px;
+                        height: 44px;
+                    }
+                }
+                &_title {
+                    position: absolute;
+                    bottom: 30px;
+                    right: 30px;
+                    width: 144px;
+                    height: 61px;
+                    background: #EDF0F5;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    font-weight: bold;
+                    &>span {
+                        margin-right: 10px;
+                        display: block;
+                        width: 49px;
+                        height: 51px;
+                        background: url('../img/decor/plains/modal/decor-plains-modal.png') center center/contain no-repeat;
+                    }
+                }
+            }
+        }
+    }
+    &__textural {
+        margin-top: 50px;
+        & .textural-btn {
+            & svg path{
+                transition: font-size 0.5s ease-in;
+            }
+            &:active,
+            &:hover {
+                & svg path{
+                    fill: #EDF0F5;
+                }
+            }
+        }
+        &_items {
+            // width: 920px;
+            display: flex;
+            justify-content: space-between;
+            // margin: 0 auto;
+        } 
+        &_item {
+            width: 160px;
+            height: 144px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            &_img {
+                width: 100%;
+                height: 100%;
+                transition: all 0.5s ease-in;
+                &>*,&>*>* {
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+            &_title {
+                position: absolute;
+                left: 0;
+                z-index: 1;
+                font-weight: bold;
+                font-size: 15px;
+                line-height: 19px;
+                text-align: center;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+                color: #EDF0F5;
+                bottom: 7px;
+                width: 100%;
+                transition: font-size 0.5s ease-in;
+                &.blue {
+                    color: #2A3C5F;
+                }
+            }
+            &:hover {
+                & .decor__textural_item_title {
+                    font-size: 18px;
+                }
+                & .decor__textural_item_img {
+                    transform: scale(1.2);
+                }
+            }
+        }
+        &_modal {
+            // &_wrapper {
+            //     margin: auto;
+
+            // }
+            &_slider {
+                width: 546px;
+                margin: 0 auto;
+                position: relative;
+                & > .modal__close {
+                    top: 11px;
+                    right: 11px;
+                }
+                &_wrapper{
+                    width: 665px;
+                    margin: 0 auto;
+                    position: relative;
+                    & .decor__textural-btn  {
+                        position: absolute;
+                        top: calc(50% - 10px);
+                        background: transparent;
+                        transition: font-size 0.5s ease-in;
+                        z-index: 101;
+                        &:hover {
+                            & svg path{
+                                fill: #EDF0F5;
+                            }
+                        }
+                        &.decor__textural-prev {
+                            left: 0;
+                        }
+                        &.decor__textural-next {
+                            right:  0;
+                        }
+                    }
+                }
+            }
+            &_item {
+                position: relative;
+                width: 546px;
+                height: 546px;
+                &_img {
+                    width: 546px;
+                    height: 546px;
+                    &>*,&>*>* {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                &_check {
+                    top: 30px;
+                    right: 30px;
+                    & > svg {
+                        width: 44px;
+                        height: 44px;
+                    }
+                }
+                &_title {
+                    position: absolute;
+                    bottom: 30px;
+                    right: 30px;
+                    width: 267px;
+                    height: 61px;
+                    background: #EDF0F5;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    
+                    &>span {
+                        margin-right: 10px;
+                        display: block;
+                        width: 49px;
+                        height: 51px;
+                        background: url('../img/decor/plains/modal/decor-plains-modal.png') center center/contain no-repeat;
+                    }
+                    & p {
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 19px;
+                        text-align: center;
+                        letter-spacing: 0.03em;
+                        text-transform: uppercase;
+                        color: #2A3C5F;
+                    }
+                    & .title {
+                        display: block;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        color: #2A3C5F;
+                        font-size: 15px;
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+        &_slider {
+            position: relative;
+            &_wrapper {
+                width: 920px;
+                margin: 0 auto;
+            }
+            & .textural-btn {
+                position: absolute;
+                background: transparent;
+                top: 65px;
+                &.textural-prev {
+                    left: 37px;
+                }
+                &.textural-next {
+                    right: 37px;
+                }
+            }
+        }
+    }
+    &__btn {
+        margin-top: 41px;
+        width: 445px;
+        &:hover {
+            background: #1E5F82;
+        }
+    }
+}

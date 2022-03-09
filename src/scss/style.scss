@@ -1,0 +1,109 @@
+@import 'fonts';
+@import '../../node_modules/swiper/swiper-bundle.css';
+@import '../../node_modules/swiper/swiper.scss';
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+//   transition: all 0.4s ease-in-out;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+* {
+	font-family: Roboto;
+}
+body {
+  background: #2A3C5F;
+}
+
+.container {
+  width: 1140px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+.title {
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 45px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: #EDF0F5;
+}
+.page__up {
+	display: block;	
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	z-index: 15;
+	bottom: 100px;
+	right: 30px;
+	background: #02ACD1;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.4s ease-in-out;
+}
+.swiper-lazy-preloader {
+	width: 42px !important;
+	height: 42px !important;
+}
+
+
+
+
+@import 'btns';
+@import 'modals';
+@import 'header';
+
+@import 'promo';
+@import 'panels';
+@import 'pluses';
+@import 'benefits';
+@import 'use';
+@import 'decor';
+@import 'services';
+@import 'center';
+@import 'photos';
+@import 'about';
+@import 'certificates';
+@import 'clients';
+@import 'reviews';
+@import 'contacts';
+@import 'footer';
+
+@import 'media-1200';
+@import 'media-992';
+@import 'media-767';
+@import 'media-576';

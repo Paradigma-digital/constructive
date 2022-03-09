@@ -1,0 +1,73 @@
+.about {
+    padding: 76px 0;
+    height: 813px;
+    background:  #EDF0F5 url('../img/about/about.png') center center/ auto 375px no-repeat;
+    &__title {
+        color: #2A3C5F;
+    }
+    &__top {
+        margin-top: 39px;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 20px;
+        border-left: 2px solid rgba(134, 138, 148, 0.7);
+        &_item {
+            max-width: 502px;
+            & > P {
+                font-weight: normal;
+                font-size: 17px;
+                line-height: 20px;
+                letter-spacing: 0.03em;
+                color: #2A3C5F;
+                &:not(:last-child) {
+                    margin-bottom: 27px;
+                }
+                &.mob {
+                    display: none;
+                }
+            }
+            &.first {
+                max-width: 518px;
+                & > P {
+                    &:not(:last-child) {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+    &__items {
+        margin-top: 22px;
+        display: flex;
+        justify-content: space-between;        
+    }
+    &__item {
+        &_column {
+            width: 25%;
+        }
+        &_icon {
+            display: flex;
+            width: 50px;
+            height: 40px;
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+        &_title {
+            margin-top: 25px;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 23px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #2A3C5F;
+        }
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+    }
+    &__btn {
+        width: 319px;
+        margin-top: 31px;
+    }
+}

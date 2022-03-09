@@ -1,0 +1,64 @@
+.reviews {
+    padding-top: 73px;
+    height: 847px;
+    background: url('../img/reviews/reviews-bg.png') top center/ auto 847px  no-repeat;
+    &__slider {
+        margin-top: 42px;
+        position: relative;
+        &_wrapper {
+            margin: 0 auto;
+            width: 920px;
+            height: 608px;
+            overflow: hidden;
+        }
+        &_item {
+            display: flex;
+            align-content: stretch;
+            &_img {
+                height: 100%;
+                width: 460px;
+                &>*,&>*>* {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+            &_wrapper {
+                width: 462px;
+                border: 1px solid rgba(134, 138, 148, 0.7);
+                box-sizing: border-box;
+                filter: drop-shadow(5px 5px 23px rgba(0, 0, 0, 0.08));
+                border-left: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &_text {
+                max-width: 320px;
+                font-weight: normal;
+                font-size: 17px;
+                line-height: 20px;
+                text-align: center;
+                letter-spacing: 0.03em;
+                color: #EDF0F5;
+            }
+        }
+        & .reviews-btn {
+            position: absolute;
+            top: calc(50% - 26px);
+            background: transparent;
+            transition: all 0.4s ease-in-out;
+            &:hover {
+                & svg path{
+                    fill: #EDF0F5;
+                }
+            }
+            &.reviews-next {
+                right: 36px;
+            }
+            &.reviews-prev {
+                left: 36px;
+            }
+        }
+    }
+}

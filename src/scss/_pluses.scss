@@ -1,0 +1,48 @@
+.pluses {
+    height: 372px;
+    background: url('../img/pluses/pluses.png') top center/ auto 372px  no-repeat;
+
+    padding-top: 80px;
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        border-left: 2px solid rgba(134, 138, 148, 0.7);
+        padding-left: 17px;
+        padding-right: 0;
+        width: 251px;
+        &_counter {
+            font-size: 18px;
+            line-height: 21px;
+            letter-spacing: 0.03em;
+            color: #2A3C5F;
+            &>span {
+                font-weight: 900;
+                font-size: 60px;
+                line-height: 47px;
+                letter-spacing: 0.03em;
+                color: #02ACD1;
+            }
+        }
+        &_title {
+            margin-top: 19px; 
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 23px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #2A3C5F;
+        }
+        &_descr {
+            margin-top: 19px;
+            font-weight: normal;
+            font-size: 17px;
+            line-height: 20px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.03em;
+            color: #2A3C5F;
+        }
+    }
+}
